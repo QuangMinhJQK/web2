@@ -1,0 +1,25 @@
+<p>product-http-handle-error-service-component works!</p>
+{{errMessage()}}
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Hình ảnh</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of products(); track p.id) {
+    <tr>
+      <td>{{ p.id }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}</td>
+    </tr>
+    } @empty {
+        <tr>
+            <td colspan="3">No product available</td>
+        </tr>
+    }
+  </tbody>
+</table>

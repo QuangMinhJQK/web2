@@ -15,6 +15,7 @@ import { ComponentInteraction } from './component-interaction/component-interact
 import { ChildComponent } from './component-interaction/child-component/child-component';
 import { ProductDropdownListComponent } from './product-dropdown-list-component/product-dropdown-list-component';
 import { ProductListCallServiceComponent } from './product-list-call-service-component/product-list-call-service-component';
+import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-error-service-component/product-http-handle-error-service-component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ProductListCallServiceComponent } from './product-list-call-service-com
     ChildComponent,
     ProductDropdownListComponent,
     ProductListCallServiceComponent,
+    ProductHttpHandleErrorServiceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

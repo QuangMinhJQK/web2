@@ -18,6 +18,7 @@ import { ProductListCallServiceComponent } from './product-list-call-service-com
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ProductListCallHttpServiceComponent } from './product-list-call-http-service-component/product-list-call-http-service-component';
 import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-error-service-component/product-http-handle-error-service-component';
+import { ProductDetailComponent } from './product-detail-component/product-detail-component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-er
     ProductListCallServiceComponent,
     ProductListCallHttpServiceComponent,
     ProductHttpHandleErrorServiceComponent,
+    ProductDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient(withInterceptorsFromDi())],

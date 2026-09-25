@@ -11,6 +11,7 @@ import { ProductDropdownListComponent } from './product-dropdown-list-component/
 import { ProductListCallServiceComponent } from './product-list-call-service-component/product-list-call-service-component';
 import { ProductListCallHttpServiceComponent } from './product-list-call-http-service-component/product-list-call-http-service-component';
 import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-error-service-component/product-http-handle-error-service-component';
+import { ProductDetailComponent } from './product-detail-component/product-detail-component';
 
 const routes: Routes = [
   { path: 'binding-property', component: BindingPropertyComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'product-list-call-service', component: ProductListCallServiceComponent},
   {path: 'product-list-call-http-service', component: ProductListCallHttpServiceComponent},
   {path: 'product-http-handle-error-service', component: ProductHttpHandleErrorServiceComponent},
+  {path: "products/:id", component: ProductDetailComponent},
 ];
 
 @NgModule({
